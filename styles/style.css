@@ -1,0 +1,91 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #96c1f8;
+}
+
+header{
+   height: 100px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+#bateau{
+    width: 380px;
+    height: 380px;
+}
+
+
+#bateau{
+    margin-top: 23%;
+    margin-left: 20%;
+    animation-name: mouvementbateau;
+    animation-duration: 8s;
+    animation-fill-mode:forwards ;
+}
+
+@keyframes mouvementbateau {
+from{
+    transform: translate(0%);
+}
+    to{
+        transform: translate(100%);
+    }
+}
+
+section{
+    background-image:url(../Images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: -20px;
+}
+
+section div{
+    width: 100px;
+    height: 100px;
+    color: #80cee1;
+    margin: 5px;
+    display: inline-flex;
+    flex-direction: row;
+    flex-direction: column;
+    background-color: #80CEE1;
+}
+
+section div:hover{
+      border-radius: 100%;
+      transform: rotate(360deg);
+      transition-duration: 0.5s;
+      background-color: #80CEE1;
+}
+
+section div:nth-child(3){
+    background-color: gray;
+    color: gray;
+}
+
+footer{
+    height: 250px;
+    background-color: #5ee1e6;
+    color: white;
+    font-family: 'Trebuchet MS';
+    font-weight: normal;
+    font-size: 18px;
+}
+
+footer #tresor{
+    cursor: grab;
+    margin: auto;
+    display: block;
+}
+
+footer div{
+    text-align: center;
+}
+
+
+
